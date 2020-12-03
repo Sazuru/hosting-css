@@ -260,10 +260,10 @@
   transform: rotate(45deg);
 }
 
-.gantt_task_line,
+/* .gantt_task_line,
 .gantt_line_wrapper {
   margin-top: -9px;
-}
+} */
 
 .gantt_side_content {
   margin-bottom: 7px;

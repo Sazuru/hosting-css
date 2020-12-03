@@ -32,6 +32,57 @@
   background: "#fafafa";
 }
 
+.gantt_line_wrapper div {
+  background-color: #faad14;
+}
+
+.gantt_link_arrow_left {
+  border-right-color: #faad14;
+}
+
+.gantt_link_arrow_right {
+  border-left-color: #faad14;
+}
+
+.gantt_link_control div {
+  width: 8px;
+  height: 8px;
+  left: 0;
+  top: 20%;
+  margin: 0px 2px;
+  vertical-align: middle;
+  background: #ffffff;
+  border: 1px solid #8c8c8c;
+}
+
+.gantt_link_control.task_right {
+  right: -17px;
+}
+
+.gantt_link_control.task_left {
+  left: -15px;
+}
+
+.gantt_link_control div:hover {
+  background-color: #fafafa;
+}
+
+.hide_links .gantt_link_point {
+  visibility: hidden;
+}
+
+.gantt_row:hover,
+.gantt_selected {
+  background-color: #e6f7ff !important;
+  /* wbs-border / bottom */
+  /* box-shadow: inset 0px -1px 0px #e8e8e8; */
+}
+
+.gantt_grid_head_cell:focus,
+.gantt_row:focus {
+  box-shadow: none;
+}
+
 .gantt_task_line,
 .gantt_project {
   border: none;
@@ -60,4 +111,172 @@
 }
 .gantt_dependent_task .gantt_task_progress {
   background-color: #389e0d;
+}
+
+.gantt_tree_icon.gantt_folder_open {
+  width: 0px;
+}
+.gantt_tree_icon.gantt_folder_closed {
+  width: 0px;
+}
+
+.gantt_tree_indent {
+  width: 5px;
+}
+
+.gantt_file {
+  width: 0px;
+}
+
+.gantt_scale_cell {
+  font-family: "PTSansCaption";
+  font-weight: normal;
+  color: #595959 !important;
+}
+
+.gantt_task_progress {
+  font-size: 10px;
+  box-sizing: border-box;
+  color: white;
+  text-align: left;
+}
+
+.gantt_task_cell {
+  /* wbs-border / left-right */
+  box-shadow: inset 0.5px 0px 0px #f5f5f5, inset -0.5px 0px 0px #f5f5f5;
+}
+
+.gantt_task_row.gantt_selected .gantt_task_cell {
+  border-left-color: #fafafa;
+  border-right-color: #fafafa;
+}
+
+/* TODO: хз откуда цвета */
+.gridProject[aria-level="0"] {
+  background-color: #9acae4;
+}
+
+.gridProject[aria-level="1"] {
+  background-color: #d4ddf5;
+}
+
+.gridProject[aria-level="2"] {
+  background-color: #e2e7f4;
+}
+
+.gridProject[aria-level="3"] {
+  background-color: #f4f2e2;
+}
+
+.gridProject[aria-level="4"] {
+  background-color: #e2f4f4;
+}
+
+.gridProject[aria-level="5"] {
+  background-color: #bbdefb;
+}
+
+.gridProject[aria-level="6"] {
+  background-color: #b3e5fc;
+}
+
+.gridProject[aria-level="7"] {
+  background-color: #b2ebf2;
+}
+
+.gridProject[aria-level="8"] {
+  background-color: #b2dfdb;
+}
+
+.gridProject[aria-level="9"] {
+  background-color: #c8e6c9;
+}
+
+.gantt_side_content.gantt_link_crossing {
+  bottom: 0px;
+  top: 0px;
+}
+
+.massAssignProcess {
+  padding-top: 4px;
+}
+
+.taskAssign,
+.taskAssignHeader {
+  width: 16px;
+  height: 16px;
+}
+
+.taskAssignLabel {
+  display: block;
+  padding-top: 2px;
+}
+
+.taskLeftText {
+  font-size: 9px;
+  line-height: 12px;
+  color: #262626;
+}
+
+.taskRightText,
+.milestoneRightText {
+  font-size: 9px !important;
+  color: #262626;
+}
+
+.progressText {
+  display: inline-block;
+  padding-left: 8px;
+  padding-top: 1px;
+}
+
+.textStyle {
+  white-space: normal;
+  line-height: 17px;
+}
+
+.gridTask .gantt_add {
+  display: none !important;
+}
+
+.baseline {
+  position: absolute;
+  height: 4px;
+  margin-top: -7px;
+  background: #85a5ff;
+  border-radius: 1px;
+}
+
+.milestoneBaseline {
+  position: absolute;
+  line-height: 12px;
+  width: 14px;
+  /* margin-top: -7px; */
+  background: #9254de;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.gantt_task_line,
+.gantt_line_wrapper {
+  margin-top: -9px;
+}
+
+.gantt_side_content {
+  margin-bottom: 7px;
+}
+
+.gantt_task_link .gantt_link_arrow {
+  margin-top: -12px;
+}
+
+.gantt_side_content.gantt_right {
+  bottom: 0;
+}
+
+.column_sticky {
+  position: sticky;
+  right: 0;
+  background-color: white;
+  z-index: 1;
 }

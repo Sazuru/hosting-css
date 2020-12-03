@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.gantt_container {
+  font-family: "PTSans";
+  font-weight: normal;
+}
+
+.gantt_layout_root:focus {
+  outline: none;
+}
+
+.gantt_cell {
+  font-size: 14px;
+  color: "#000000";
+}
+
+.gantt_parent_icon {
+  display: none;
+}
+
+.gantt_grid_head_cell {
+  font-family: "PTSansCaption";
+  font-weight: "normal";
+  color: "#595959";
+}
+
+.gantt_grid_head_settingsButton {
+  cursor: pointer;
+}
+
+.gantt_grid_scale,
+.gantt_task_scale {
+  background: "#fafafa";
+}
+
+.gantt_task_line,
+.gantt_project {
+  border: none;
+  border-radius: 2px;
+  background: #40a9ff !important;
+}
+.gantt_task_line > .gantt_task_content,
+.gantt_project > .gantt_task_content {
+  /* top: 1px; */
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.gantt_task_line.gantt_milestone {
+  /* TODO: хз откуда цвет */
+  background: #d33daf !important;
+}
+
+.gantt_task_progress {
+  border-radius: 3px;
+  background-color: #096dd9;
+}
+
+.gantt_dependent_task {
+  background-color: #73d13d !important;
+}
+.gantt_dependent_task .gantt_task_progress {
+  background-color: #389e0d;
+}

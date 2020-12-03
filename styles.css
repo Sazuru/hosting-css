@@ -1,6 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Caption&display=swap");
 .gantt_container {
-  font-family: "PTSans";
+  font-family: "PT Sans";
   font-weight: normal;
 }
 
@@ -18,8 +19,8 @@
 }
 
 .gantt_grid_head_cell {
-  font-family: "PTSansCaption";
-  font-weight: "normal";
+  font-family: "PT Sans Caption";
+  font-weight: normal;
   color: "#595959";
 }
 
@@ -129,7 +130,7 @@
 }
 
 .gantt_scale_cell {
-  font-family: "PTSansCaption";
+  font-family: "PT Sans Caption";
   font-weight: normal;
   color: #595959 !important;
 }
